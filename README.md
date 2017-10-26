@@ -1,4 +1,4 @@
-# lex-chat
+# lex-chat [![CircleCI](https://circleci.com/gh/dwmkerr/lex-chat.svg?style=svg)](https://circleci.com/gh/dwmkerr/lex-chat) [![codecov](https://codecov.io/gh/dwmkerr/lex-chat/branch/master/graph/badge.svg)](https://codecov.io/gh/dwmkerr/lex-chat) 
 
 A simple CLI to chat with a Lex bot - great for developing and debugging!
 
