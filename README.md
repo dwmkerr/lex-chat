@@ -2,6 +2,8 @@
 
 A simple CLI to chat with a Lex bot - great for developing and debugging!
 
+![Example Screenshot](./docs/lex-chat.gif)
+
 ## Usage
 
 Install with `npm`:

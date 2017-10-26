@@ -1,4 +1,5 @@
 const chalk = require('chalk');
+const debug = require('debug')('lex-chat');
 const readline = require('readline');
 
 const executeCommand = require('./src/executeCommand');
@@ -70,6 +71,9 @@ function cli() {
             rl.prompt();
           })
           .catch((error) => {
+            debug('Error executing command...');
+            debug(error);
+            debugger;
             console.log(`\n${chalk.red('An error occurred connecting to the server. Run with DEBUG=lex-chat set for details.')}\n`);
             process.exit(1);
           });
