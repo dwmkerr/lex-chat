@@ -1,0 +1,29 @@
+{
+  "name": "lex-chat",
+  "version": "0.1.0",
+  "description": "A CLI for interacting with AWS Lex Bots - great for development!",
+  "main": "index.js",
+  "bin": {
+    "oscar": "./bin/lex-chat.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/lex-chat.js",
+    "debug": "node --inspect --inspect-brk ./bin/lex-chat.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmkerr/lex-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwmkerr/lex-chat/issues"
+  },
+  "homepage": "https://github.com/lex-chat/lex-chat#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "debug": "^2.6.8",
+    "inquirer": "^3.3.0"
+  }
+}
