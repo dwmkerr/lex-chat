@@ -33,8 +33,6 @@ function createPrompt(userName, botName) {
 }
 
 function cli() {
-  console.log('lex-chat');
-  console.log('');
 
   chooseBot()
     .then(({ bot, version }) => {
