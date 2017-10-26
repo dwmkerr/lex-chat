@@ -9,6 +9,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha -t 10000 './{,!(node_modules)/**/}*.spec.js'",
+    "coverage": "nyc npm test && nyc report --reporter=lcov",
     "start": "node ./bin/lex-chat.js",
     "debug": "node --inspect --inspect-brk ./bin/lex-chat.js"
   },
@@ -29,6 +30,7 @@
     "inquirer": "^3.3.0"
   },
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1"
   }
 }
