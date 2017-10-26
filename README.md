@@ -20,16 +20,22 @@ All available bots will be listed, choose the one you want to chat to then chat 
 
 ## Developer Guide
 
-Build it with:
-
-```bash
-npm build
-```
-
 Run it:
 
 ```bash
 npm start
 ```
 
-You can also publish and install it, or link it.
+Debug it:
+
+```bash
+npm run debug
+```
+
+Publish it:
+
+```bash
+npm version patch # or minor/major
+git push --follow-tags
+npm publish
+```
