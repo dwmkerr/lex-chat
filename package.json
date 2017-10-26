@@ -4,7 +4,7 @@
   "description": "A CLI for interacting with AWS Lex Bots - great for development!",
   "main": "index.js",
   "bin": {
-    "oscar": "./bin/lex-chat.js"
+    "lex-chat": "./bin/lex-chat.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
