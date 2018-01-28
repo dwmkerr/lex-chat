@@ -1,6 +1,4 @@
-# lex-chat [![CircleCI](https://circleci.com/gh/dwmkerr/lex-chat.svg?style=shield)](https://circleci.com/gh/dwmkerr/lex-chat) [![codecov](https://codecov.io/gh/dwmkerr/lex-chat/branch/master/graph/badge.svg)](https://codecov.io/gh/dwmkerr/lex-chat) 
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/lex-chat.svg)](https://greenkeeper.io/)
+# lex-chat [![CircleCI](https://circleci.com/gh/dwmkerr/lex-chat.svg?style=shield)](https://circleci.com/gh/dwmkerr/lex-chat) [![codecov](https://codecov.io/gh/dwmkerr/lex-chat/branch/master/graph/badge.svg)](https://codecov.io/gh/dwmkerr/lex-chat) [![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/lex-chat.svg)](https://greenkeeper.io/)
 
 A simple CLI to chat with a Lex bot - great for developing and debugging! The perfect companion to the [Lex Starter Kit](https://github.com/dwmkerr/lex-starter-kit).
 
