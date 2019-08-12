@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const debug = require('debug')('lex-cli');
+const debug = require('debug')('lex-chat');
 
 /**
  * executeCommand - runs a process and waits for it to terminate. Returns the 

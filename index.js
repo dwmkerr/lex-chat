@@ -64,6 +64,7 @@ function cli() {
             //  Decode and write the response.
             const val = JSON.parse(response);
             console.log(`${prompt.bot()}${val.message}`);
+            debug(JSON.stringify(val, null, 2));
 
             //  Run the prompt again.
             rl.prompt();
@@ -71,7 +72,7 @@ function cli() {
           .catch((error) => {
             debug('Error executing command...');
             debug(error);
-            console.log(`\n${chalk.red('An error occurred connecting to the server. Run with DEBUG=lex-chat set for details.')}\n`);
+            console.log(`${chalk.red('error')}: ${error.stderr.trim()}`);
             process.exit(1);
           });
 
