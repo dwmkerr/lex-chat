@@ -35,8 +35,21 @@ function createPrompt(userName, botName) {
 function cli() {
 
   chooseBot()
-    .then(({ bot, version }) => {
+    .then((choice) => {
+      //  If we have no bot, then we can fail and suggest they use the starter
+      //  kit.
+      if (!choice) {
+        console.log();
+        console.log('No Lex bots were found on your account!');
+        console.log(`The ${chalk.blue.bold('lex-starter-kit')} project can be used to quickly create one:`);
+        console.log();
+        console.log(`  ${chalk.blue('https://github.com/dwmkerr/lex-starter-kit')}`);
+        console.log();
+        process.exit(0);
+      }
+
       //  Ready!
+      const { bot, version } = choice;
       console.log(`Ready to chat to: ${bot}`);
       console.log('');
       
