@@ -15,6 +15,8 @@ This guide covers how to use the tool, as well as how to develop for it and exte
 * [Usage](#usage)
 * [Developer Guide](#developer-guide)
     * [Diagnostics](#diagnostics)
+* [Troubleshooting](#troubleshooting)
+    * [No Bots Found](#no-bots-found)
 * [TODO](#todo)
 
 <!-- vim-markdown-toc -->
@@ -66,6 +68,26 @@ DEBUG=lex-chat lex-chat
 ```
 
 This will output additional low-level data if needed. This is powered by the powerful [`debug`](https://github.com/visionmedia/debug) library.
+
+# Troubleshooting
+
+Some troubleshooting tips for common issues are below.
+
+## No Bots Found
+
+If you see the following message:
+
+<img src="./docs/no-bots.png" width=800 alt="No Bots Image" />
+
+Then the tool cannot find any Lex bots on your AWS account. Make sure the AWS CLI is setup to connect to the correct account. Verify your account with:
+
+```sh
+aws sts get-caller-identity
+```
+
+Which should show you the current AWS account your configuration is targeting.
+
+If you need to create a bot, try the [`lex-starter-kit`](https://github.com/dwmkerr/lex-starter-kit) project.
 
 # TODO
 
