@@ -71,6 +71,7 @@ This will output additional low-level data if needed. This is powered by the pow
 
 Some notes on key next steps for the big refactor:
 
-- [ ] If no bots, show a more helpful interface, possibly link to the lex starter kit? Even offer the option to create one?
+- [x] If no bots, show a more helpful interface, possibly link to the lex starter kit? Even offer the option to create one?
 - [ ] For debugging, when we get an intent back, we can see what the intent is and get the lambda logs
 - [ ] Show a demo/screenshot with a broken lambda function
+- [ ] Show bot version in list?
