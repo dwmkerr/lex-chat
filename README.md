@@ -77,7 +77,7 @@ Some troubleshooting tips for common issues are below.
 
 If you see the following message:
 
-<img src="./docs/no-bots.png" width="800" alt="No Bots Image" />
+<img src="./docs/no-bots.png" width="640px" alt="No Bots Image" />
 
 Then the tool cannot find any Lex bots on your AWS account. Make sure the AWS CLI is setup to connect to the correct account. Verify your account with:
 
