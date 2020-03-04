@@ -27,7 +27,7 @@
     "chalk": "^2.0.1",
     "debug": "^4.1.0",
     "eslint": "^6.0.0",
-    "inquirer": "^6.0.0"
+    "inquirer": "^7.0.6"
   },
   "devDependencies": {
     "mocha": "^7.0.1",
