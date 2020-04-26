@@ -30,7 +30,7 @@
     "inquirer": "^6.0.0"
   },
   "devDependencies": {
-    "mocha": "^7.0.1",
+    "mocha": "^7.1.2",
     "nyc": "^11.2.1"
   }
 }
