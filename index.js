@@ -35,8 +35,21 @@ function createPrompt(userName, botName) {
 function cli() {
 
   chooseBot()
-    .then(({ bot, version }) => {
+    .then((choice) => {
+      //  If we have no bot, then we can fail and suggest they use the starter
+      //  kit.
+      if (!choice) {
+        console.log();
+        console.log('No Lex bots were found on your account!');
+        console.log(`The ${chalk.blue.bold('lex-starter-kit')} project can be used to quickly create one:`);
+        console.log();
+        console.log(`  ${chalk.blue('https://github.com/dwmkerr/lex-starter-kit')}`);
+        console.log();
+        process.exit(0);
+      }
+
       //  Ready!
+      const { bot, version } = choice;
       console.log(`Ready to chat to: ${bot}`);
       console.log('');
       
@@ -64,6 +77,7 @@ function cli() {
             //  Decode and write the response.
             const val = JSON.parse(response);
             console.log(`${prompt.bot()}${val.message}`);
+            debug(JSON.stringify(val, null, 2));
 
             //  Run the prompt again.
             rl.prompt();
@@ -71,7 +85,7 @@ function cli() {
           .catch((error) => {
             debug('Error executing command...');
             debug(error);
-            console.log(`\n${chalk.red('An error occurred connecting to the server. Run with DEBUG=lex-chat set for details.')}\n`);
+            console.log(`${chalk.red('error')}: ${error.stderr.trim()}`);
             process.exit(1);
           });
 
